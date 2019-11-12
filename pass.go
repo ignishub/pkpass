@@ -31,7 +31,7 @@ type Pass struct {
 	// TODO: Style Keys
 
 	// Visual Appearance Keys
-	Barcode            BarcodeDict   `json:"barcode,omitempty"`
+	Barcode            *BarcodeDict  `json:"barcode,omitempty"`
 	Barcodes           []BarcodeDict `json:"barcodes,omitempty"`
 	BackgroundColor    Color         `json:"backgroundColor,omitempty"`
 	ForegroundColor    Color         `json:"foregroundColor,omitempty"`
