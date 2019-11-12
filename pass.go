@@ -46,4 +46,6 @@ type Pass struct {
 
 	// NFC-Enabled Pass Keys
 	NFC NFCDict `json:"nfc,omitempty"`
+
+	StoreCard map[string]interface{} `json:"storeCard,omitempty"`
 }
