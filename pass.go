@@ -45,7 +45,7 @@ type Pass struct {
 	WebServiceURL       string `json:"webServiceURL,omitempty"`
 
 	// NFC-Enabled Pass Keys
-	NFC NFCDict `json:"nfc,omitempty"`
+	NFC *NFCDict `json:"nfc,omitempty"`
 
 	StoreCard map[string]interface{} `json:"storeCard,omitempty"`
 }
